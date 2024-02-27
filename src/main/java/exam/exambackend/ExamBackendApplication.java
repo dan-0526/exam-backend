@@ -12,7 +12,6 @@ public class ExamBackendApplication {
 
     public static void main(String[] args) {
 
-//        SpringApplication.run(ExamBackendApplication.class, args);
         SpringApplication app = new SpringApplication(ExamBackendApplication.class);
         Environment env = app.run(args).getEnvironment();
         LOG.info("启动成功！");
