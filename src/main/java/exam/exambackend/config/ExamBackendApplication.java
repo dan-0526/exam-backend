@@ -1,11 +1,14 @@
-package exam.exambackend;
+package exam.exambackend.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
+
+@ComponentScan("exam.exambackend")
 @SpringBootApplication
 public class ExamBackendApplication {
     private static final Logger LOG = LoggerFactory.getLogger(ExamBackendApplication.class);
